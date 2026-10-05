@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fly Web Solutions — Building Bridges To Innovate Digitally</title>
+  <meta name="description" content="Fly Web Solutions is a web design and digital marketing agency bridging the gap between your vision and digital innovation." />
+  <link rel="icon" href="images/logo.webp" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Outfit:wght@500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="is-loading">
+
+  <!-- page loader -->
+  <div class="loader" aria-hidden="true">
+    <div class="loader__logo"><img src="images/logo.webp" alt="" width="259" height="248" /></div>
+    <div class="loader__bars"><i></i><i></i><i></i><i></i><i></i><i></i></div>
+  </div>
+
+  <!-- custom cursor ring -->
+  <div class="cursor" id="cursor" aria-hidden="true"></div>
+
+  <!-- full-screen menu -->
+  <div class="menu" id="menu" aria-hidden="true">
+    <ul class="menu__links">
+      <li><a href="#hero">Home</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#portfolio">Portfolio</a></li>
+      <li><a href="https://flywebsolutions.com/blogs/">Blogs</a></li>
+      <li><a href="https://flywebsolutions.com/about/">About</a></li>
+      <li><a href="https://flywebsolutions.com/contact/">Contact</a></li>
+    </ul>
+    <div class="menu__side">
+      <h3>Start a project</h3>
+      <h2>Get in touch</h2>
+      <p><a href="mailto:info@flywebsolutions.com">info@flywebsolutions.com</a></p>
+    </div>
+  </div>
+
+  <header class="header" id="header">
+    <a href="#hero" class="header__logo" aria-label="Fly Web Solutions home">
+      <img src="images/logo.webp" alt="Fly Web Solutions" width="259" height="248" />
+    </a>
+    <button class="menu-btn" id="menuBtn" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="menu">
+      <i></i><i></i>
+    </button>
+  </header>
+
+  <!-- ================= HERO ================= -->
+  <!-- tall wrapper = scroll distance for the tunnel journey -->
+  <div class="hero-scroll" id="heroScroll">
+    <section class="hero" id="hero">
+
+      <canvas class="hero__canvas" id="tunnel"></canvas>
+      <div class="hero__vignette" aria-hidden="true"></div>
+
+      <!-- centered headline -->
+      <div class="moto">
+        <span class="moto__eyebrow">Flyweb Solution</span>
+        <h1 class="moto__title" id="motoTitle" aria-label="Building Bridges To Innovate Digitally">
+          <span class="moto__line" aria-hidden="true"></span>
+          <span data-split aria-hidden="true">Building Bridges To Innovate</span>
+          <span class="moto__accent" data-split aria-hidden="true">Digitally</span>
+        </h1>
+        <div class="moto__actions">
+          <a href="#more" class="btn btn--primary">Explore More</a>
+        </div>
+      </div>
+
+      <!-- video that opens at the end of the tunnel -->
+      <div class="portal" id="portal" aria-hidden="true">
+        <div class="portal__frame">
+          <img
+            class="portal__poster"
+            src="https://i.ytimg.com/vi/rDrjQyatgXQ/maxresdefault.jpg"
+            onerror="this.onerror=null;this.src='https://i.ytimg.com/vi/rDrjQyatgXQ/hqdefault.jpg'"
+            alt=""
+          />
+          <iframe
+            id="bgVideo"
+            data-src="https://www.youtube.com/embed/rDrjQyatgXQ?autoplay=0&mute=1&controls=0&fs=0&rel=0&playsinline=1&disablekb=1&modestbranding=1&iv_load_policy=3&enablejsapi=1"
+            title="Showreel video"
+            frameborder="0"
+            allow="autoplay; encrypted-media; picture-in-picture"
+            referrerpolicy="strict-origin-when-cross-origin"
+            tabindex="-1"
+          ></iframe>
+        </div>
+      </div>
+
+      <a href="#more" class="scroll-hint" aria-label="Scroll down">
+        <span class="scroll-hint__mouse"><i></i></span>
+      </a>
+    </section>
+  </div>
+
+  <main class="page">
+
+    <!-- ================= INTRO ================= -->
+    <section class="section intro" id="more">
+      <div class="wrap">
+        <span class="eyebrow fade-up">Who we are</span>
+        <p class="intro__text" id="introText">
+          At fly web solutions, we are more than just a web design and digital marketing agency. In today’s bustling digital landscape, we recognize the unique challenges businesses face in standing out and thriving. That’s why we’re here – to bridge the gap between your vision and digital innovation.
+        </p>
+      </div>
+    </section>
+
+    <!-- scrolling band of services -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee__track">
+        <span>Web Development</span><span>Custom Web Design</span><span>CMS Development</span><span>Ecommerce Development</span><span>Progressive Web Apps</span><span>Mobile App Development</span><span>Mobile Game Development</span><span>Enterprise Development</span><span>MVP Development</span>
+        <span>Web Development</span><span>Custom Web Design</span><span>CMS Development</span><span>Ecommerce Development</span><span>Progressive Web Apps</span><span>Mobile App Development</span><span>Mobile Game Development</span><span>Enterprise Development</span><span>MVP Development</span>
+      </div>
+    </div>
+
+    <!-- ================= SERVICES ================= -->
+    <section class="section" id="services">
+      <div class="wrap">
+        <div class="section__head">
+          <span class="eyebrow fade-up">Services</span>
+          <h2 class="section__title fade-up">How can we <span class="accent">help you?</span></h2>
+          <p class="section__lead fade-up">At FlyWebSolutions, we offer tailored digital solutions designed to elevate your brand and grow your business. Here’s how we can help:</p>
+        </div>
+
+        <div class="services" data-stagger>
+          <a class="service fade-up" href="https://flywebsolutions.com/services-design-and-development/web-development/">
+            <span class="service__num">01</span>
+            <svg class="service__icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 6l-6 6 6 6M16 6l6 6-6 6M14 4l-4 16"/></svg>
+            <h3>Web Development</h3>
+            <p>Our web development services are second to none. We specialize in creating websites that not only look stunning but also function seamlessly.</p>
+            <span class="service__more">Read More <i>→</i></span>
+          </a>
+          <a class="service fade-up" href="https://flywebsolutions.com/services-design-and-development/web-development/custom-web-design/">
+            <span class="service__num">02</span>
+            <svg class="service__icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18M8 9v11"/></svg>
+            <h3>Custom Web Design</h3>
+            <p>We believe that every industry deserves a unique online presence. Our custom web design services cater to the specific needs of your business.</p>
+            <span class="service__more">Read More <i>→</i></span>
+          </a>
+          <a class="service fade-up" href="https://flywebsolutions.com/services-design-and-development/cms-development/">
+            <span class="service__num">03</span>
+            <svg class="service__icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l9 5-9 5-9-5 9-5zM3 12.5l9 5 9-5M3 17l9 5 9-5"/></svg>
+            <h3>CMS Development</h3>
+            <p>Managing content has never been easier. Our exceptional CMS development services ensure that you have complete control over your website’s content.</p>
+            <span class="service__more">Read More <i>→</i></span>
+          </a>
+          <a class="service fade-up" href="https://flywebsolutions.com/services-design-and-development/ecommerce-development/">
+            <span class="service__num">04</span>
+            <svg class="service__icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M2 4h3l2.4 11h10.4L20 7H6"/><circle cx="9" cy="19" r="1.5"/><circle cx="17" cy="19" r="1.5"/></svg>
+            <h3>Ecommerce Development</h3>
+            <p>Our bespoke e-commerce solutions cater to businesses of all industries. From user-friendly interfaces to secure payment gateways.</p>
+            <span class="service__more">Read More <i>→</i></span>
+          </a>
+          <a class="service fade-up" href="https://flywebsolutions.com/services-design-and-development/web-development/progressive-web-apps-pwa/">
+            <span class="service__num">05</span>
+            <svg class="service__icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M13 2L4 14h7l-1 8 9-12h-7l1-8z"/></svg>
+            <h3>Progressive Web Apps</h3>
+            <p>We offer custom and robust PWA solutions that combine the best of web and mobile apps, delivering an exceptional user experience.</p>
+            <span class="service__more">Read More <i>→</i></span>
+          </a>
+          <a class="service fade-up" href="https://flywebsolutions.com/services-design-and-development/mobile-app-development/">
+            <span class="service__num">06</span>
+            <svg class="service__icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="7" y="2" width="10" height="20" rx="2.5"/><path d="M11 18h2"/></svg>
+            <h3>Mobile App Development</h3>
+            <p>Stay ahead of the mobile game with our cutting-edge mobile app solutions, designed to meet the demands of today’s users.</p>
+            <span class="service__more">Read More <i>→</i></span>
+          </a>
+          <a class="service fade-up" href="https://flywebsolutions.com/services-design-and-development/mobile-app-development/mobile-game-development/">
+            <span class="service__num">07</span>
+            <svg class="service__icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="7" width="20" height="11" rx="5.5"/><path d="M7 11v3M5.5 12.5h3M15.5 12.5h.01M18 12.5h.01"/></svg>
+            <h3>Mobile Game Development</h3>
+            <p>For gaming enthusiasts, we offer bespoke mobile game development services that deliver immersive gameplay and entertainment.</p>
+            <span class="service__more">Read More <i>→</i></span>
+          </a>
+          <a class="service fade-up" href="https://flywebsolutions.com/services-design-and-development/enterprise-development/">
+            <span class="service__num">08</span>
+            <svg class="service__icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 21V5a1 1 0 011-1h9a1 1 0 011 1v16M15 10h4a1 1 0 011 1v10M2 21h20M8 8h3M8 12h3M8 16h3"/></svg>
+            <h3>Enterprise Development</h3>
+            <p>For enterprises, our custom software solutions are designed to streamline operations and enhance efficiency.</p>
+            <span class="service__more">Read More <i>→</i></span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= ABOUT ================= -->
+    <section class="section about" id="about">
+      <div class="wrap about__grid">
+        <div class="about__side">
+          <span class="eyebrow fade-up">About Us</span>
+          <h2 class="section__title fade-up">Where imagination meets <span class="accent">innovation</span></h2>
+          <a href="https://flywebsolutions.com/about/" class="btn btn--ghost fade-up">More about us</a>
+        </div>
+
+        <div class="about__list" data-stagger>
+          <article class="about__item fade-up">
+            <span>01</span>
+            <div>
+              <h3>Who Are We</h3>
+              <p>At fly web solutions, where imagination meets innovation. We’re a passionate team of designers, developers, and visionaries dedicated to crafting unique digital experiences that captivate and engage.</p>
+            </div>
+          </article>
+          <article class="about__item fade-up">
+            <span>02</span>
+            <div>
+              <h3>Our Mission</h3>
+              <p>Our mission is to drive your digital success through creative solutions tailored to your unique needs. With a customer-centric approach, technical expertise, and an eye for creativity.</p>
+            </div>
+          </article>
+          <article class="about__item fade-up">
+            <span>03</span>
+            <div>
+              <h3>Vision</h3>
+              <p>Our vision at fly web solutions is to be the premier destination for creative design solutions worldwide. We aspire to set new industry standards for design excellence.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= PORTFOLIO ================= -->
+    <section class="section" id="portfolio">
+      <div class="wrap">
+        <div class="section__head section__head--row">
+          <div>
+            <span class="eyebrow fade-up">Portfolio</span>
+            <h2 class="section__title fade-up">Work that speaks <span class="accent">for itself</span></h2>
+          </div>
+          <a href="#" class="btn btn--ghost fade-up">Explore More</a>
+        </div>
+
+        <div class="portfolio" data-stagger>
+          <a class="work fade-up" href="#"><img src="images/portfolio1.jpg" alt="Portfolio project 1" loading="lazy" width="625" height="625" /><span class="work__arrow">↗</span></a>
+          <a class="work fade-up" href="#"><img src="images/portfolio2.jpg" alt="Portfolio project 2" loading="lazy" width="625" height="625" /><span class="work__arrow">↗</span></a>
+          <a class="work fade-up" href="#"><img src="images/portfolio3.jpg" alt="Portfolio project 3" loading="lazy" width="625" height="625" /><span class="work__arrow">↗</span></a>
+          <a class="work fade-up" href="#"><img src="images/portfolio4.jpg" alt="Portfolio project 4" loading="lazy" width="625" height="625" /><span class="work__arrow">↗</span></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= CUSTOMERS ================= -->
+    <section class="section customers" id="customers">
+      <div class="wrap">
+        <div class="section__head section__head--center">
+          <span class="eyebrow fade-up">Our Customers</span>
+          <h2 class="section__title fade-up">Trusted by businesses of all sizes to streamline, simplify, and <span class="accent">succeed.</span></h2>
+        </div>
+
+        <div class="clients" data-stagger>
+          <a class="client fade-up" href="https://www.newmotionlabs.com/" target="_blank" rel="noopener"><img src="images/client-newmotionlabs.jpg" alt="New Motion Labs" loading="lazy" /></a>
+          <a class="client fade-up" href="https://oniyacharters.com/" target="_blank" rel="noopener"><img src="images/client-oniyacharters.jpg" alt="Oniya Charter Services" loading="lazy" /></a>
+          <a class="client fade-up" href="https://www.moldremovalleessummitmo.com/" target="_blank" rel="noopener"><img src="images/client-moldremoval.jpg" alt="Lee's Summit Mold Solutions" loading="lazy" /></a>
+          <a class="client fade-up" href="https://techclimbs.com/" target="_blank" rel="noopener"><img src="images/client-techclimbs.jpg" alt="Techclimbs" loading="lazy" /></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= JOIN US ================= -->
+    <section class="section">
+      <div class="wrap">
+        <div class="band fade-up">
+          <div class="band__glow" aria-hidden="true"></div>
+          <h2 class="section__title">Join Us on the <span class="accent">Creative Journey</span></h2>
+          <p>Whether you’re launching a new website, rebranding, or seeking to enhance your digital presence, fly web solutions is your creative partner. Let’s collaborate and transform your vision into a captivating digital reality. Together, we’ll make your brand shine in the online world.</p>
+          <a href="https://flywebsolutions.com/contact/" class="btn btn--primary">Contact With Us</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= LEADERSHIP ================= -->
+    <section class="section" id="team">
+      <div class="wrap">
+        <div class="section__head section__head--center">
+          <span class="eyebrow fade-up">Team</span>
+          <h2 class="section__title fade-up">Meet Our <span class="accent">Leadership</span></h2>
+        </div>
+
+        <div class="team" data-stagger>
+          <article class="member fade-up">
+            <div class="member__photo"><img src="images/team-1.jpg" alt="Joanne Williams" loading="lazy" width="400" height="400" /></div>
+            <h3>Joanne Williams</h3>
+            <p>Founder</p>
+          </article>
+          <article class="member fade-up">
+            <div class="member__photo"><img src="images/team-2.jpg" alt="Fred Buster" loading="lazy" width="400" height="400" /></div>
+            <h3>Fred Buster</h3>
+            <p>Director OPS</p>
+          </article>
+          <article class="member fade-up">
+            <div class="member__photo"><img src="images/team-3.jpg" alt="Lisa Hoffman" loading="lazy" width="400" height="400" /></div>
+            <h3>Lisa Hoffman</h3>
+            <p>Director HR</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= START A PROJECT ================= -->
+    <section class="section start" id="contact">
+      <div class="wrap">
+        <span class="eyebrow fade-up">Let’s talk</span>
+        <h2 class="start__title fade-up">Would you like to start a <span class="accent">project with us?</span></h2>
+        <p class="section__lead fade-up">We’re here to turn your ideas into reality. Whether you’re starting from scratch or need expert help to grow. Let’s create something amazing together.</p>
+        <a href="mailto:info@flywebsolutions.com" class="btn btn--primary btn--lg fade-up">Email Us</a>
+      </div>
+    </section>
+  </main>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="footer">
+    <div class="wrap footer__grid">
+      <div class="footer__brand">
+        <img src="images/logo.webp" alt="Fly Web Solutions" width="259" height="248" loading="lazy" />
+      </div>
+
+      <nav aria-label="Services">
+        <h2>Services</h2>
+        <ul>
+          <li><a href="https://flywebsolutions.com/services-design-and-development/web-development/">Web Development</a></li>
+          <li><a href="https://flywebsolutions.com/services-design-and-development/web-development/custom-web-design/">Custom Web Design</a></li>
+          <li><a href="https://flywebsolutions.com/services-design-and-development/web-development/progressive-web-apps-pwa/">Progressive Web Apps</a></li>
+          <li><a href="https://flywebsolutions.com/services-design-and-development/mobile-app-development/">Mobile App Development</a></li>
+          <li><a href="https://flywebsolutions.com/services-design-and-development/mobile-app-development/mobile-game-development/">Mobile Game Development</a></li>
+          <li><a href="https://flywebsolutions.com/services-design-and-development/ecommerce-development/">E-commerce Development</a></li>
+          <li><a href="https://flywebsolutions.com/services-design-and-development/enterprise-development/">Enterprise Development</a></li>
+          <li><a href="https://flywebsolutions.com/services-design-and-development/cms-development/">CMS Development</a></li>
+          <li><a href="https://flywebsolutions.com/services-design-and-development/mvp-development/">MVP Development</a></li>
+        </ul>
+      </nav>
+
+      <nav aria-label="Explore">
+        <h2>Explore Links</h2>
+        <ul>
+          <li><a href="https://flywebsolutions.com/">Home</a></li>
+          <li><a href="https://flywebsolutions.com/services-design-and-development/">Services</a></li>
+          <li><a href="https://flywebsolutions.com/blogs/">Blogs</a></li>
+          <li><a href="https://flywebsolutions.com/contact/">Contact</a></li>
+          <li><a href="https://flywebsolutions.com/about/">About</a></li>
+        </ul>
+      </nav>
+
+      <div>
+        <h2>Get In Touch</h2>
+        <ul>
+          <li><a href="mailto:info@flywebsolutions.com">info@flywebsolutions.com</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="wrap footer__bottom">
+      <p>Copyright © 2026 flywebsolutions.com | Powered by flywebsolutions.com</p>
+      <a href="#hero" class="footer__top">Back to top ↑</a>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
